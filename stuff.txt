@@ -1,0 +1,119 @@
+1. Conceptos de pago:
+Z003 DUPLICADO CARNET INTELIGENTE
+DE BIBLIOTECA MULTA UNINORTE
+Z019 CARNET PRIMER SEMESTRE
+EXAMEN MEDICO PRIMER INGRESO
+="">Z042 SUPLETORIO PREGRADO
+EXA PSI - IDIOMAS
+Z047 EXAMEN CLASIFICACION IDIOMAS
+="">Z051 SUPLETORIOS POSGRADO
+="">Z052 SUPLETORIOS IDIOMAS
+INGLES (85USD)
+="">Z067 SUPLETORIOS IDIOMAS
+REEMBOLSO GASTOS DE VIAJE
+Z125 EXAMEN CERTIFICACION ITALIANO
+CERTIFICADO NIVEL DE ITALIANO
+Z211 EXAMEN CELPE-BRAS
+="">Z214 MULTAS GEOLOGIA
+LENGUA MODERNA Y CULTURA
+PAGO MIXTO MATRICULA PREGRADO
+MIXTO MATRICULA IDIOMAS PREGRADO
+PAGO MIXTO MATRICULA POSGRADO
+ANTICIPO DE MATRICULA PREGRADO
+ANTI  ANTICIPO MATRICULA IDIOMAS
+ANTG  ANTICIPO MATRICULA POSGRADO
+UNINORTE (61)
+IDIOMAS (63)
+PAGO ACTIVIDADES BIENESTAR ORGANIZACIONAL
+="">Z131 UNINORTE 5K
+PCRA PAGO CRÉDITO ADICIONAL
+REEMBOLSO FUNCIONARIO ANTICIPO-CONSUMO
+INFORMÁTICA (FINEM)
+ACTIVO FIJO EQUIPO ELECTRÓNICO
+FIJO MUEBLES Y ENSERES
+DUPLICADO DE CARNET FUNCIONARIO
+BIENESTAR ORGANIZACIONAL - UNIVOLUNTARIO
+- INSCRIPCIÓN MOVILIDAD INTERNACIONAL
+Z069 AFILIACION EGRESADOS BIBLIOTECA
+Z213 ENVIO POSTAL INTERNACIONAL
+
+2. Modelos:
+2.1. Sistema Interno:
+
+//person
+Person (PersonID, Firstname, Lastname, IdDocType, IdDocNumber, Email (personal), Address)
+UniversityActor (UniversityActorID, PersonID, Code, Username (university), Phone, Email (university))
+User (UserID, UniversityActorID, Password) //login username should be university username
+Campus (CampusID, Name, Address)
+
+//hardcore stuff
+OperationStatus(OperationStatusID, Status (pending, approved, rejected))
+
+PaymentMethod (PaymentMethodID, CardID, UniversityActorID, Name)
+Card (CardID, CardCategoryID, UniversityActorID, Active?, CardType, CardNumber, ExpMonth, ExpYear)
+CardCategory (CardCategoryID, Category (visa, mastercard, american express))
+
+PaymentMethodGroupQuery (PaymentMethodGroupQueryID, OperationStatusID, UniversityActorID, Date)
+PaymentMethodQuery (PaymentMethodQueryID, OperationStatusID, GatewayResultCodeID, PaymentMethodGroupQueryID, PaymentMethodID, Balance, GatewayDate, Authorization)
+
+Payment (PaymentID, PaymentMethodID, PaymentConceptID, OperationStatusID, GatewayResultCodeID, UniversityActorID, CampusID, CreditCardApprovalCode, Amount (amount to be debited or captured), Balance (total amount of payment), Date, EffectiveDate, GatewayDate, ReferenceNumber, Authorization?, NumInstallments)
+PaymentConcept (PaymentConceptID, Concept, Description, Amount (base))
+GatewayResultCode (GatewayResultCodeID, Code (success, declined, internal error, validation error, permanent fail))
+
+Invoice (InvoiceID, PaymentID, Date, DueDate, Description, InvoiceNumber)
+// Company name, phone*, email, fax*
+// Unique identifier, date, invoice number
+// Subtotal, discount, tax, total
+// Payment terms, payment details, payment method, payment due date
+
+//stuff
+Address (AddressID, DepartmentID, CityID, AddressLine, ZIPCode)
+Department (DepartmentID, Name)
+City (CityID, DepartmentID, Name)
+
+2.2. Sistema Externo:
+Banco
+Usuario
+Tarjeta de crédito
+Tarjeta de débito
+
+3. Endpoints:
+
+
+4. Componentes:
+4.1. Frontend:
+...
+
+4.2. API
+Gateway para frontend
+Servicio para aplicaciones internas y negocios externos
+Intermediación con DB
+Autenticación (API keys; JWT; OAuth)
+
+... Stuff:
+Facturas
+Historial
+Métodos de pago
+Conceptos (1)
+FAQ
+Feedback
+Pagos pendientes
+Formas de pago
+Reconocimento de franquicia
+Rol de administrador
+Webhook
+Circuit breaker
+Disponibilidad de nodos
+
+5. Access
+1. api
+role, person, university_actor, campus, address, city, department, payment, payment_concept, invoice, card_category, card_type, balance_query, payment_method_query, operation_status: (R)
+user, payment_method, card: (CRUD)
+
+2. payment gateway
+role, user, person, university_actor, campus, address, city, department, payment_concept, payment_method, card, card_category, card_type, balance_query, payment_method_query, operation_status: (R)
+invoice, payment:(CRUD)
+
+3. balance gateway
+role, user, person, university_actor, campus, address, city, department, invoice, payment, payment_concept, payment_method, card, card_category, card_type, operation_status: (R)
+balance_query, payment_method_query:(CRUD)

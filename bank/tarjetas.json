@@ -1,0 +1,266 @@
+//Western
+{
+  "owner":"Jairo Velasco",
+  "owner_id":"1117",
+  "exp_month":"06",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":888888888,
+  "card_number":4620740023715600,
+  "card_franchise_id":4,
+  "card_type_id":1
+}
+{
+  "owner":"Laura Guirado",
+  "owner_id":"1118",
+  "exp_month":"06",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":77777777,
+  "card_number":371259480212784,
+  "card_franchise_id":3,
+  "card_type_id":1
+}
+{
+  "owner":"Jairo Velasco",
+  "owner_id":"1117",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":5555004,
+  "card_number":5806832232635512,
+  "card_franchise_id":5,
+  "card_type_id":2
+}
+{
+  "owner":"George Elvira",
+  "owner_id":"1119",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":844664000,
+  "card_number":5958653768403539,
+  "card_franchise_id":5,
+  "card_type_id":2
+}
+{
+  "owner":"George Elvira",
+  "owner_id":"1119",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":370796017085174,
+  "card_franchise_id":3,
+  "card_type_id":1
+}
+{
+  "owner":"Noel Montiel",
+  "owner_id":"1120",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":377603885242502,
+  "card_franchise_id":3,
+  "card_type_id":2
+}
+{
+  "owner":"Yago Hurtado",
+  "owner_id":"1116",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":4836601666376383,
+  "card_franchise_id":4,
+  "card_type_id":1
+}
+{
+  "owner":"Iris Mata",
+  "owner_id":"1121,
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":4519821152550363,
+  "card_franchise_id":4,
+  "card_type_id":2
+}
+{
+  "owner":"Gonzalo Pascual",
+  "owner_id":"1122",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":5607916683032606,
+  "card_franchise_id":5,
+  "card_type_id":1
+}
+{
+  "owner":"Constantin Rosales",
+  "owner_id":"1123",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":5899032626112122,
+  "card_franchise_id":5,
+  "card_type_id":2
+}
+{
+  "owner":"Alejandra Cardenas",
+  "owner_id":"1124",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":376438587134473,
+  "card_franchise_id":3,
+  "card_type_id":2
+}
+{
+  "owner":"Laila Vallejo",
+  "owner_id":"1125",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":378764543364205,
+  "card_franchise_id":3,
+  "card_type_id":1
+}
+//East
+{
+  "owner":"Gustavo Marques",
+  "owner_id":"1111",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":999999834,
+  "card_number":5370141525202878,
+  "card_franchise_id":5,
+  "card_type_id":1
+}
+{
+  "owner":"Rosana Heras",
+  "owner_id":"1112",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":6478000,
+  "card_number":4306520326571889,
+  "card_franchise_id":4,
+  "card_type_id":1
+}
+{
+  "owner":"Minerva Ibañez",
+  "owner_id":"1113",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":1452450,
+  "card_number":340755566623152,
+  "card_franchise_id":3,
+  "card_type_id":1
+}
+{
+  "owner":"Braulio Reyes",
+  "owner_id":"1114",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":318764543364205,
+  "card_franchise_id":3,
+  "card_type_id":1
+}
+{
+  "owner":"Benjamin Dorado",
+  "owner_id":"1115",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":4349207403874582,
+  "card_franchise_id":4,
+  "card_type_id":2
+}
+{
+  "owner":"Jairo Velasco",
+  "owner_id":"1116",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":4423550273702360,
+  "card_franchise_id":4,
+  "card_type_id":2
+}
+{
+  "owner":"Jairo Velasco",
+  "owner_id":"1116",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":5149314645105467,
+  "card_franchise_id":5,
+  "card_type_id":1
+}
+{
+  "owner":"Laila Vallejo",
+  "owner_id":"1117",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":5482364317747786,
+  "card_franchise_id":5,
+  "card_type_id":2
+}
+{
+  "owner":"Eladio Galan",
+  "owner_id":"1118",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":333539781030378,
+  "card_franchise_id":3,
+  "card_type_id":2
+}
+{
+  "owner":"Gerard Robles",
+  "owner_id":"1119",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":313152334401187,
+  "card_franchise_id":3,
+  "card_type_id":1
+}
+{
+  "owner":"Gerard Robles",
+  "owner_id":"1119",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":4320493551765118,
+  "card_franchise_id":4,
+  "card_type_id":1
+}
+{
+  "owner":"Emma Carrasco",
+  "owner_id":"1120",
+  "exp_month":"11",
+  "exp_year":"2026",
+  "cvv":"111",
+  "amount":66494600,
+  "card_number":5043081460614574,
+  "card_franchise_id":5,
+  "card_type_id":2
+}
